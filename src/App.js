@@ -13,10 +13,14 @@ import Service from './pages/Service';
 import Navbar from './Components/Navbar/Navbar';
 import UserView from './Components/dataTable/UserView';
 import Users from './pages/Users';
-import {userInputs } from './formSource';
+import {userInputs,productInputs } from './formSource';
 import NewUser from './pages/NewUser';
 import Products from './pages/Products';
 import Profile from './pages/Profile';
+import ProductView from './pages/ProductView';
+import NewProduct from './pages/NewProduct';
+
+
 function App() {
   return (
     <>
@@ -33,10 +37,12 @@ function App() {
         <Route path='/service' element={<Service/>}/>
         <Route path='/settings' element={<Setting/>}/>
         <Route path='/users/userView' element={<UserView/>}/>
-        <Route path='users/new' element={<NewUser inputs={userInputs}/>}/>
+        <Route path='/products/productview' element={<ProductView/>}/>
+        
+        <Route path='/users/new' element={<NewUser inputs={userInputs}/>}/>
+        <Route path='/products/newProduct' element={<NewProduct inputs={productInputs}/>}/>
         <Route path='/products' element={<Products/>}/>
         <Route path='/profile' element={<Profile/>}/>
-        
         
         <Route path='*' element={<>not found </>}/>
       </Routes>

@@ -1,10 +1,11 @@
 import React from 'react';
-import DataTable from '../Components/dataTable/DataTable';
+import ProductTable from '../Components/dataTable/ProductTable';
+
 
 function Products(props) {
     return (
         <div>
-            <DataTable/>
+           <ProductTable/>
         </div>
     );
 }
